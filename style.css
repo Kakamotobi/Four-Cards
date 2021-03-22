@@ -60,22 +60,10 @@ header > p {
 
 /* -----Cards----- */
 .card-container {
-    margin-bottom: 75px;
+    margin-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-@media only screen and (min-width: 1200px) {
-    .card-container {
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        max-height: 530px;
-    }
-    .card {
-        margin-right: 25px;
-    }
 }
 
 .card {
@@ -128,4 +116,29 @@ h3 {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        padding-top: 90px;
+    }
+    h2 {
+        font-size: 2.2rem;
+    }
+    header > p {
+        margin-bottom: 65px;
+    }
+    .card-container {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-height: 530px;
+        margin-bottom: 40px;
+    }
+    .card {
+        margin-right: 25px;
+    }
+    .card > p {
+        font-size: 0.8rem;
+    }
 }
