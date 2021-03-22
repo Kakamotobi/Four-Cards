@@ -20,7 +20,6 @@ html {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
-    /* border: 1px solid blue; */
 }
 
 body {
@@ -94,18 +93,34 @@ h3 {
 
 .card.one {
     border-color: var(--cyan);
+    transition: background-color 200ms;
+}
+.card.one:hover {
+    background-color: hsla(180, 62%, 55%, 0.1);
 }
 
 .card.two {
     border-color: var(--red);
+    transition: background-color 200ms;
+}
+.card.two:hover {
+    background-color: hsla(0, 78%, 62%, 0.1);
 }
 
 .card.three {
     border-color: var(--orange);
+    transition: background-color 200ms;
+}
+.card.three:hover {
+    background-color: hsl(34, 97%, 64%, 0.1);
 }
 
 .card.four {
     border-color: var(--blue);
+    transition: background-color 200ms;
+}
+.card.four:hover {
+    background-color: hsl(212, 86%, 64%, 0.1);
 }
 
 /* -----Footer----- */
