@@ -138,6 +138,9 @@ h3 {
     .card {
         margin-right: 25px;
     }
+    .card.four {
+        margin-right: 0;
+    }
     .card > p {
         font-size: 0.8rem;
     }
