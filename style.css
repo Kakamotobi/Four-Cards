@@ -1,0 +1,131 @@
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --darkblue: hsl(234, 12%, 34%);
+    --greyblue: hsl(229, 6%, 66%);
+    --lightgrey: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid blue; */
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--lightgrey);
+    height: 100vh;
+    padding: 72px 30px;
+}
+
+/* -----Common Styles----- */
+h2,
+h3 {
+    color: var(--darkblue);
+}
+
+p {
+    color: var(--greyblue);
+}
+
+/* -----Header----- */
+h2 {
+    font-size: 1.6rem;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h2 > strong {
+    display: block;
+}
+
+header > p {
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 75px;
+}
+
+/* -----Cards----- */
+.card-container {
+    margin-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (min-width: 1200px) {
+    .card-container {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-height: 530px;
+    }
+    .card {
+        margin-right: 25px;
+    }
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 5px;
+    border-top: 4px solid #000;
+    box-shadow: 0 8px 10px hsla(229, 6%, 66%, 0.24);
+    padding: 25px 28px;
+    margin-bottom: 25px;
+    max-width: 315px;
+}
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+.card > p {
+    font-size: 0.9rem;
+    margin-bottom: 32px;
+}
+.image-holder {
+    display: flex;
+    justify-content: flex-end;
+}
+.image-holder > img {
+    width: 58px;
+    height: 58px;
+}
+
+.card.one {
+    border-color: var(--cyan);
+}
+
+.card.two {
+    border-color: var(--red);
+}
+
+.card.three {
+    border-color: var(--orange);
+}
+
+.card.four {
+    border-color: var(--blue);
+}
+
+/* -----Footer----- */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    bottom: 0;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
